@@ -1,0 +1,38 @@
+body{
+    padding: 30px 30px;
+
+    /* font 可以按顺序设置如下属性：
+        •font-style
+        •font-variant
+        •font-weight
+        •font-size/line-height
+        •font-family*/
+    font: 13px/100% Verdana, sans-serif;
+    text-align: center;    
+}
+/*在 body之後之後插入content的內容*/
+body:after{
+    content: "this text is generated using CSS";
+    display: block;
+    margin-top: 2em;
+}
+input{
+    width:50px;
+}
+span#result{
+    width: 50px;
+    display: inline-block;
+    /*許多人會搞不清楚 CSS 中的 display:block 與 display:inline 到底有什麼樣的差異
+        •display:block - 區塊，元素會以區塊方式呈現，除非設定 position 或 float。
+        •display:inline - 所有文字或圖片均不換行，也就是全部都會是同一行的意思。
+    block 的特性是可以設定高度（height）、寬度（width）、上方與下方距離，像是 
+    div、p、ul、li 均屬 block。而 inline 高度與寬度都不能設定，
+    文字或圖片所佔的寬度就是他的寬度，像是 span、a、input、img、em 均屬 inline。*/
+}
+form.exampleform{
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px #888;
+    padding:20px;
+}
